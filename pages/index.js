@@ -34,7 +34,7 @@ export default function Home( {propertiesForSale, propertiesForRent} ) {
         
       >
       <Flex flexWrap="wrap">
-        {/* Fetch the properties and map over them... */}
+        {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
 
 
       </Flex>
